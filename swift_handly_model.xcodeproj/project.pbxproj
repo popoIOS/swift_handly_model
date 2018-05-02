@@ -15,6 +15,13 @@
 		1C7234AA20996B960032DB52 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C7234A920996B960032DB52 /* main.m */; };
 		1C7234B420996B960032DB52 /* swift_handly_modelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C7234B320996B960032DB52 /* swift_handly_modelTests.m */; };
 		1C7234BF20996B960032DB52 /* swift_handly_modelUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C7234BE20996B960032DB52 /* swift_handly_modelUITests.m */; };
+		1C7234CF209985680032DB52 /* AFManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C7234CE209985680032DB52 /* AFManager.m */; };
+		1C7234D2209989EF0032DB52 /* TestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7234D1209989EF0032DB52 /* TestModel.swift */; };
+		1C7234D420999C5B0032DB52 /* Data_Read.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7234D320999C5B0032DB52 /* Data_Read.swift */; };
+		1C7234D62099A8D90032DB52 /* Test_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7234D52099A8D90032DB52 /* Test_ViewController.swift */; };
+		1C7234D92099AFE70032DB52 /* Data_read_OC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C7234D82099AFE70032DB52 /* Data_read_OC.m */; };
+		1C7234DC2099B7100032DB52 /* TestModel_OC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C7234DB2099B7100032DB52 /* TestModel_OC.m */; };
+		79544E75377BF36D41F39745 /* Pods_swift_handly_model.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C24CD33E1FA21DB091DD583 /* Pods_swift_handly_model.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +58,19 @@
 		1C7234BA20996B960032DB52 /* swift_handly_modelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = swift_handly_modelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C7234BE20996B960032DB52 /* swift_handly_modelUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = swift_handly_modelUITests.m; sourceTree = "<group>"; };
 		1C7234C020996B960032DB52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C7234CD209985680032DB52 /* AFManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFManager.h; sourceTree = "<group>"; };
+		1C7234CE209985680032DB52 /* AFManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFManager.m; sourceTree = "<group>"; };
+		1C7234D0209989EE0032DB52 /* swift_handly_model-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "swift_handly_model-Bridging-Header.h"; sourceTree = "<group>"; };
+		1C7234D1209989EF0032DB52 /* TestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestModel.swift; sourceTree = "<group>"; };
+		1C7234D320999C5B0032DB52 /* Data_Read.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data_Read.swift; sourceTree = "<group>"; };
+		1C7234D52099A8D90032DB52 /* Test_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test_ViewController.swift; sourceTree = "<group>"; };
+		1C7234D72099AFE70032DB52 /* Data_read_OC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Data_read_OC.h; sourceTree = "<group>"; };
+		1C7234D82099AFE70032DB52 /* Data_read_OC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Data_read_OC.m; sourceTree = "<group>"; };
+		1C7234DA2099B7100032DB52 /* TestModel_OC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestModel_OC.h; sourceTree = "<group>"; };
+		1C7234DB2099B7100032DB52 /* TestModel_OC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestModel_OC.m; sourceTree = "<group>"; };
+		2C24CD33E1FA21DB091DD583 /* Pods_swift_handly_model.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swift_handly_model.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7291AECB07D559D744CE1580 /* Pods-swift_handly_model.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swift_handly_model.debug.xcconfig"; path = "Pods/Target Support Files/Pods-swift_handly_model/Pods-swift_handly_model.debug.xcconfig"; sourceTree = "<group>"; };
+		76600A9B1D658CABE184857A /* Pods-swift_handly_model.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swift_handly_model.release.xcconfig"; path = "Pods/Target Support Files/Pods-swift_handly_model/Pods-swift_handly_model.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79544E75377BF36D41F39745 /* Pods_swift_handly_model.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +99,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		01FA407E053059F50DF4512D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2C24CD33E1FA21DB091DD583 /* Pods_swift_handly_model.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		1C72348E20996B950032DB52 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +114,8 @@
 				1C7234B220996B960032DB52 /* swift_handly_modelTests */,
 				1C7234BD20996B960032DB52 /* swift_handly_modelUITests */,
 				1C72349820996B950032DB52 /* Products */,
+				C54B91F3C411C37F319F1ECD /* Pods */,
+				01FA407E053059F50DF4512D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +136,8 @@
 				1C72349B20996B950032DB52 /* AppDelegate.m */,
 				1C72349D20996B950032DB52 /* ViewController.h */,
 				1C72349E20996B950032DB52 /* ViewController.m */,
+				1C7234D52099A8D90032DB52 /* Test_ViewController.swift */,
+				1C7234CC20996CC40032DB52 /* swift */,
 				1C7234A020996B950032DB52 /* Main.storyboard */,
 				1C7234A320996B950032DB52 /* Assets.xcassets */,
 				1C7234A520996B950032DB52 /* LaunchScreen.storyboard */,
@@ -132,6 +165,31 @@
 			path = swift_handly_modelUITests;
 			sourceTree = "<group>";
 		};
+		1C7234CC20996CC40032DB52 /* swift */ = {
+			isa = PBXGroup;
+			children = (
+				1C7234CD209985680032DB52 /* AFManager.h */,
+				1C7234CE209985680032DB52 /* AFManager.m */,
+				1C7234D1209989EF0032DB52 /* TestModel.swift */,
+				1C7234DA2099B7100032DB52 /* TestModel_OC.h */,
+				1C7234DB2099B7100032DB52 /* TestModel_OC.m */,
+				1C7234D320999C5B0032DB52 /* Data_Read.swift */,
+				1C7234D72099AFE70032DB52 /* Data_read_OC.h */,
+				1C7234D82099AFE70032DB52 /* Data_read_OC.m */,
+				1C7234D0209989EE0032DB52 /* swift_handly_model-Bridging-Header.h */,
+			);
+			path = swift;
+			sourceTree = "<group>";
+		};
+		C54B91F3C411C37F319F1ECD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7291AECB07D559D744CE1580 /* Pods-swift_handly_model.debug.xcconfig */,
+				76600A9B1D658CABE184857A /* Pods-swift_handly_model.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,9 +197,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1C7234C320996B960032DB52 /* Build configuration list for PBXNativeTarget "swift_handly_model" */;
 			buildPhases = (
+				0051A5DCB9A0C7F84506CDAC /* [CP] Check Pods Manifest.lock */,
 				1C72349320996B950032DB52 /* Sources */,
 				1C72349420996B950032DB52 /* Frameworks */,
 				1C72349520996B950032DB52 /* Resources */,
+				943B6A782C2849B2F4ACCF1E /* [CP] Embed Pods Frameworks */,
+				BA1057A97861CB7F052D44C4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -199,6 +260,7 @@
 				TargetAttributes = {
 					1C72349620996B950032DB52 = {
 						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 					};
 					1C7234AE20996B960032DB52 = {
@@ -260,14 +322,78 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0051A5DCB9A0C7F84506CDAC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-swift_handly_model-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		943B6A782C2849B2F4ACCF1E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-swift_handly_model/Pods-swift_handly_model-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/MJExtension/MJExtension.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HandyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJExtension.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-swift_handly_model/Pods-swift_handly_model-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA1057A97861CB7F052D44C4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-swift_handly_model/Pods-swift_handly_model-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1C72349320996B950032DB52 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C7234DC2099B7100032DB52 /* TestModel_OC.m in Sources */,
+				1C7234CF209985680032DB52 /* AFManager.m in Sources */,
 				1C72349F20996B950032DB52 /* ViewController.m in Sources */,
+				1C7234D2209989EF0032DB52 /* TestModel.swift in Sources */,
+				1C7234D62099A8D90032DB52 /* Test_ViewController.swift in Sources */,
 				1C7234AA20996B960032DB52 /* main.m in Sources */,
 				1C72349C20996B950032DB52 /* AppDelegate.m in Sources */,
+				1C7234D420999C5B0032DB52 /* Data_Read.swift in Sources */,
+				1C7234D92099AFE70032DB52 /* Data_read_OC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,28 +554,39 @@
 		};
 		1C7234C420996B960032DB52 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7291AECB07D559D744CE1580 /* Pods-swift_handly_model.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 7G45M8A98W;
 				INFOPLIST_FILE = swift_handly_model/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.DXDF.swift-handly-model";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "swift_handly_model/swift/swift_handly_model-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		1C7234C520996B960032DB52 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76600A9B1D658CABE184857A /* Pods-swift_handly_model.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 7G45M8A98W;
 				INFOPLIST_FILE = swift_handly_model/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.DXDF.swift-handly-model";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "swift_handly_model/swift/swift_handly_model-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -457,6 +594,7 @@
 		1C7234C720996B960032DB52 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7G45M8A98W;
@@ -472,6 +610,7 @@
 		1C7234C820996B960032DB52 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7G45M8A98W;
@@ -487,6 +626,7 @@
 		1C7234CA20996B960032DB52 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7G45M8A98W;
 				INFOPLIST_FILE = swift_handly_modelUITests/Info.plist;
@@ -501,6 +641,7 @@
 		1C7234CB20996B960032DB52 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7G45M8A98W;
 				INFOPLIST_FILE = swift_handly_modelUITests/Info.plist;
