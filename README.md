@@ -1,0 +1,4 @@
+# swift_handly_model
+swift使用HandyJSON转化Model 
+OC使用extentionJSON转化Model
+提供了Swift转Model类的demo和OC转Model类的demo
