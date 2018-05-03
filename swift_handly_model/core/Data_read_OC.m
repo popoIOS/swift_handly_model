@@ -28,13 +28,11 @@
         OutDataModel * outdata = [OutDataModel mj_objectWithKeyValues:data];
         if (outdata.status == 10000) {
 
-            [Data_read_OC deal_into_data:outdata.data result:^(id succe_data) {
-                compla(YES,succe_data);
-            }];
+            compla(YES,outdata.data);
 
         }else{
             compla(NO,nil);
-            NSLog(@"请求失败");
+            [PubMethods showAudioDismisstext:outdata.desc];
         }
     }
 }
@@ -59,20 +57,4 @@
     }
 }
 
-//判断整合之后的数据类型 1数组  2TestModel  3其他的
-+(NSInteger)data_type:(id)data{
-    if ([data isKindOfClass:[NSArray class]]) {
-        
-        return 1;
-        
-    }else if ([data isKindOfClass:[TestModel_OC class]]) {
-        
-        return 2;
-        
-    }else{
-        
-        return 3;
-        
-    }
-}
 @end

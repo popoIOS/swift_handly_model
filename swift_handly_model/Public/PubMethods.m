@@ -355,9 +355,8 @@ static PubMethods *pub_meth;
     
     UIView *new_v = view ? view : [[[UIApplication sharedApplication] delegate] window];
     MBProgressHUD *hud=  [[MBProgressHUD alloc] initWithView:new_v];
-    [new_v sendSubviewToBack:hud];
-    
     [new_v addSubview:hud];
+    
     hud.detailsLabel.text = str;
     [hud showAnimated:YES];
 }
@@ -373,16 +372,15 @@ static PubMethods *pub_meth;
     }
 }
 #pragma -mark  自动消失的全屏提示
-
 +(void)showAudioDismisstext:(NSString*)str{
     //默认两秒消失
     UIView *new_v = [[[UIApplication sharedApplication] delegate] window];
     MBProgressHUD *hud=  [[MBProgressHUD alloc] initWithView:new_v];
     [new_v sendSubviewToBack:hud];
-    
+    hud.offset = CGPointMake(new_v.center.x, 200);
     [new_v addSubview:hud];
+    
     hud.mode = MBProgressHUDModeText;
-    hud.bezelView.style = MBProgressHUDBackgroundStyleBlur;
     hud.label.text = str;
     [hud showAnimated:YES];
     [hud hideAnimated:YES afterDelay:2];
@@ -395,10 +393,7 @@ static PubMethods *pub_meth;
          rightButtonTitle:(NSString*)rightstr//@"sure"--1
                    finish:(void (^)(NSInteger index))block
 {
-    
-    
     UIAlertView *alert;
-    
     alert = [[UIAlertView alloc]initWithTitle:title message:contStr delegate:nil cancelButtonTitle:leftstr otherButtonTitles:rightstr, nil];
     
     [alert showAlertViewWithCompleteBlock:^(NSInteger buttonIndex) {

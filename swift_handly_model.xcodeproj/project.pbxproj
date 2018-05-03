@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1C59DEA3209AA262007FE988 /* PubMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C59DEA2209AA262007FE988 /* PubMethods.m */; };
-		1C59DEB9209AB043007FE988 /* MBHUDManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C59DEB8209AB043007FE988 /* MBHUDManager.m */; };
 		1C59DEBE209AECFF007FE988 /* UIAlertView+Fast.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C59DEBB209AECFD007FE988 /* UIAlertView+Fast.m */; };
 		1C59DEBF209AECFF007FE988 /* UIActionSheet+Fast.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C59DEBC209AECFE007FE988 /* UIActionSheet+Fast.m */; };
 		1C72349C20996B950032DB52 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C72349B20996B950032DB52 /* AppDelegate.m */; };
@@ -49,8 +48,6 @@
 		1C59DEA0209A9F44007FE988 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		1C59DEA1209AA262007FE988 /* PubMethods.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PubMethods.h; sourceTree = "<group>"; };
 		1C59DEA2209AA262007FE988 /* PubMethods.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PubMethods.m; sourceTree = "<group>"; };
-		1C59DEB7209AB043007FE988 /* MBHUDManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MBHUDManager.h; sourceTree = "<group>"; };
-		1C59DEB8209AB043007FE988 /* MBHUDManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MBHUDManager.m; sourceTree = "<group>"; };
 		1C59DEBA209AECFD007FE988 /* UIActionSheet+Fast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIActionSheet+Fast.h"; sourceTree = "<group>"; };
 		1C59DEBB209AECFD007FE988 /* UIAlertView+Fast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+Fast.m"; sourceTree = "<group>"; };
 		1C59DEBC209AECFE007FE988 /* UIActionSheet+Fast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIActionSheet+Fast.m"; sourceTree = "<group>"; };
@@ -125,8 +122,6 @@
 			children = (
 				1C7234D0209989EE0032DB52 /* swift_handly_model-Bridging-Header.h */,
 				1C59DEA0209A9F44007FE988 /* PrefixHeader.pch */,
-				1C59DEB7209AB043007FE988 /* MBHUDManager.h */,
-				1C59DEB8209AB043007FE988 /* MBHUDManager.m */,
 				1C59DEBA209AECFD007FE988 /* UIActionSheet+Fast.h */,
 				1C59DEBC209AECFE007FE988 /* UIActionSheet+Fast.m */,
 				1C59DEBD209AECFE007FE988 /* UIAlertView+Fast.h */,
@@ -438,7 +433,6 @@
 				1C72349F20996B950032DB52 /* ViewController.m in Sources */,
 				1C7234D2209989EF0032DB52 /* TestModel.swift in Sources */,
 				1C7234D62099A8D90032DB52 /* Test_ViewController.swift in Sources */,
-				1C59DEB9209AB043007FE988 /* MBHUDManager.m in Sources */,
 				1C7234AA20996B960032DB52 /* main.m in Sources */,
 				1C72349C20996B950032DB52 /* AppDelegate.m in Sources */,
 				1C59DEBF209AECFF007FE988 /* UIActionSheet+Fast.m in Sources */,
@@ -614,13 +608,13 @@
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 7G45M8A98W;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = /Users/ydz/Desktop/swift_handly_model/swift_handly_model/Public/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/swift_handly_model/Public/PrefixHeader.pch";
 				INFOPLIST_FILE = swift_handly_model/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.DXDF.swift-handly-model";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/ydz/Desktop/swift_handly_model/swift_handly_model/Public/swift_handly_model-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/swift_handly_model/Public/swift_handly_model-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -637,13 +631,13 @@
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 7G45M8A98W;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = /Users/ydz/Desktop/swift_handly_model/swift_handly_model/Public/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/swift_handly_model/Public/PrefixHeader.pch";
 				INFOPLIST_FILE = swift_handly_model/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.DXDF.swift-handly-model";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/ydz/Desktop/swift_handly_model/swift_handly_model/Public/swift_handly_model-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/swift_handly_model/Public/swift_handly_model-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -11,6 +11,12 @@
 
 @interface AFManager : NSObject
 
-+(void)Get_ManagerURl:(NSString *)url para:(NSDictionary *)param view:(UIView *)showView compla:(void(^)(id data,BOOL isSuccess))success fail:(void(^)(NSError  *error))fail;
+//get请求
++(void)GetRequestURLString:(NSString *)url parameter:(NSDictionary *)dic showProgress:(UIView *)view success:(void(^)(BOOL isSuccess,id data))success Faliuer:(void(^)(NSError  *error))falier;
 
+//post请求
++(void)PostRequestURLString:(NSString *)url parameter:(NSDictionary *)dic showProgress:(UIView *)view success:(void(^)(BOOL isSuccess,id data))success Faliuer:(void(^)(NSError  *error))falier;
+
+//上传文件
++(void)PostUpLoadingImage:(NSString *)url parameter:(NSDictionary *)dic showProgress:(UIView *)view Image:(NSArray *)arrayImage success:(void(^)(BOOL isSuccess,id data))success Faliuer:(void(^)(NSError  *error))falier;
 @end

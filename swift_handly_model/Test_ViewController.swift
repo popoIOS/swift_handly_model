@@ -13,37 +13,32 @@ class Test_ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.white
-        
-        AFManager.get_ManagerURl("http://app.saike.com/index.php?c=scene&m=getsceneinfo&page=1&platform=ios&sub_type=1&type=3&user_token=MTAwMDAwMDM0OF9iZjQ3MTMyZTJiZTcwYjEzNDFjMzY1YjA5NTA3MjI2MF8xNTI1MjQxMjYwX2lvc181LjcuMTdfMTgwMDA%3D&version=5.7.17", para: [:], view: nil, compla: { (data : Any?, is_succ : Bool) in
-            
-            //SWIFT数据解析
-//            if is_succ && Data_Read.data_type(data: data) == 2 {
-//                let model : TestModel = data as! TestModel
-//                print(model.title)
-//                print(model.base?.userprovince ?? "0000")
-//                for i in model.actionlist ?? [] {
-//                    print(i.aname)
+    
+            AFManager.getRequestURLString("http://app.saike.com/index.php?c=scene&m=getsceneinfo&page=1&platform=ios&sub_type=1&type=3&user_token=TAwMDAwMDM0OF9iZjQ3MTMyZTJiZTcwYjEzNDFjMzY1YjA5NTA3MjI2MF8xNTI1MjQxMjYwX2lvc181LjcuMTdfMTgwMDA%3D&version=5.7.17", parameter: [:], showProgress: self.view, success: { ( isSuccess : Bool,data : Any?) in
+                
+//                SWIFT数据解析
+//                if is_succ && Data_Read.data_type(data: data) == 2 {
+//                    let model : TestModel = data as! TestModel
+//                    print(model.title)
+//                    print(model.base?.userprovince ?? "0000")
+//                    for i in model.actionlist ?? [] {
+//                        print(i.aname)
+//                    }
 //                }
-//            }
-            //OC数据解析
-            if is_succ && Data_read_OC.data_type(data) == 2 {
-                let model : TestModel_OC = data as! TestModel_OC
-                print(model.title)
-                print(model.base?.userprovince ?? "0000")
-                for i in model.actionlist ?? [] {
-                    print((i as! ActionModel_OC).aname)
-                }
-            }
+//                OC数据解析
+//                if isSuccess && Data_read_OC.data_type(data) == 2 {
+//                    let model : TestModel_OC = data as! TestModel_OC
+//                    print(model.title)
+//                    print(model.base?.userprovince ?? "0000")
+//                    for i in model.actionlist ?? [] {
+//                        print((i as! ActionModel_OC).aname)
+//                    }
+//                }
 
-            
-            
-        }) { (error : Error?) in
-            
-        }
-    
-    
-    
-    
+                
+            }) { (error : Error?) in
+
+            }
     
     
     }
