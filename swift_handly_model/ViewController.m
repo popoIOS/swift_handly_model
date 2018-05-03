@@ -7,10 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "AFManager.h"
-#import "swift_handly_model-Swift.h"
-#import "Data_read_OC.h"
-#import "TestModel_OC.h"
+
 
 @interface ViewController ()
 
@@ -21,6 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    self.view.backgroundColor = [UIColor redColor];
     
     NSString *urlString = @"http://app.saike.com/index.php?c=scene&m=getsceneinfo&page=1&platform=ios&sub_type=1&type=3&user_token=MTAwMDAwMDM0OF9iZjQ3MTMyZTJiZTcwYjEzNDFjMzY1YjA5NTA3MjI2MF8xNTI1MjQxMjYwX2lvc181LjcuMTdfMTgwMDA%3D&version=5.7.17";
 
@@ -42,7 +40,7 @@
             NSLog(@"%@", model.title);
             NSLog(@"%@", model.base.userprovince);
             for (ActionModel_OC *actionModel in model.actionlist) {
-                NSLog(@"%@", actionModel.aicon);
+                NSLog(@"%@", actionModel.aname);
             }
         }
         

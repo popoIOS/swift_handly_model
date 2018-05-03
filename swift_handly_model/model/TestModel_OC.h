@@ -15,6 +15,7 @@
 
 @interface ActionModel_OC : NSObject
 @property (nonatomic,copy) NSString *aicon;
+@property (nonatomic,copy) NSString *aname;
 @end
 
 

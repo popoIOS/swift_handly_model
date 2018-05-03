@@ -6,10 +6,11 @@
 //  Copyright © 2018年 yzd. All rights reserved.
 //
 
+#define DefaultView [[[UIApplication sharedApplication] delegate] window]
+
 #import "AFManager.h"
 #import "AFNetworking.h"
-#import "swift_handly_model-Swift.h"
-#import "Data_read_OC.h"
+
 
 @implementation AFManager
 
@@ -24,10 +25,14 @@
     //如果报接受类型不一致请替换一致text/html或别的
     manger.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/html",@"text/plain", nil];
 
+    [PubMethods showMBProgress:@"请稍等" withView:DefaultView];
+    
+    [PubMethods showAudioDismisstext:@"都是SB"];
+    
     [manger GET:url parameters:param progress:^(NSProgress * _Nonnull downloadProgress) {
         
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-
+        [PubMethods dismissMBProgressWithView:DefaultView];
         //swift数据解析
 //        [Data_Read JSON_DATAWithData:responseObject result:^(BOOL isSucc, id _Nullable data) {
 //            success(data,isSucc);
@@ -38,7 +43,8 @@
         }];
         
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        
+        [PubMethods dismissMBProgressWithView:DefaultView];
+
         
         fail(error);
         

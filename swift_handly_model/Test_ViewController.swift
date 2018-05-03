@@ -12,7 +12,7 @@ class Test_ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor.blue
+        self.view.backgroundColor = UIColor.white
         
         AFManager.get_ManagerURl("http://app.saike.com/index.php?c=scene&m=getsceneinfo&page=1&platform=ios&sub_type=1&type=3&user_token=MTAwMDAwMDM0OF9iZjQ3MTMyZTJiZTcwYjEzNDFjMzY1YjA5NTA3MjI2MF8xNTI1MjQxMjYwX2lvc181LjcuMTdfMTgwMDA%3D&version=5.7.17", para: [:], view: nil, compla: { (data : Any?, is_succ : Bool) in
             
@@ -30,9 +30,9 @@ class Test_ViewController: UIViewController {
                 let model : TestModel_OC = data as! TestModel_OC
                 print(model.title)
                 print(model.base?.userprovince ?? "0000")
-//                for i in model.actionlist ?? [] {
-//                    print((i as! ActionModel_OC).aicon)
-//                }
+                for i in model.actionlist ?? [] {
+                    print((i as! ActionModel_OC).aname)
+                }
             }
 
             

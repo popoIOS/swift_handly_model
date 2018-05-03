@@ -2,6 +2,7 @@ platform :ios,8.0
 target :'swift_handly_model' do
 pod 'AFNetworking'
 pod 'MJExtension'
+pod 'MBProgressHUD'
 pod 'HandyJSON'
 use_frameworks!
 end
